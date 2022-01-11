@@ -1,7 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: #000000;
+}
 
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #000000;
 }
 
 .container {
@@ -10,21 +22,98 @@ a {
     padding: 0 20px;
 }
 
-.main__title {
-    font-size: 50px;
-    color: rgba(239, 4, 4, 0.75);
+.content {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.main-block,
+.minor-block__inner {
+    padding: 0 20px;
+}
+
+.main-block,
+.minor-block {
+    margin-bottom: 50px;
+}
+
+.title,
+.minor-block__title {
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.main__text {
-    font-size: 20px;
-    text-indent: 10px;
-    text-align: justify;
-    margin: 0 10px;
+.title {
+    font-size: 80px;
 }
 
-.person__title {
-    font-size: 25px;
+.text,
+.minor-block__text {
+    margin-bottom: 10px;
+
+    text-indent: 10px;
+    text-align: justify;
+    font-size: 20px;
 }
+
+.text {
+    max-width: 80%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.minor-block__title {
+    font-size: 40px;
+    color: rgba(129, 1, 1, 0.89);
+}
+
+.minor-block__inner {
+    margin-bottom: 30px;
+
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.minor-block__text {
+    max-width: 50%;
+}
+
+.minor-block__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.minor-block__list li {
+    padding: 10px 0 10px 5px;
+    width: 100%;
+    background-color: rgba(129, 1, 1, 0.89);
+
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+.minor-block__list li:hover {
+    background-color: #ffffff;
+}
+
+.minor-block__list li:hover a {
+    color: #000000;
+}
+
+.minor-block__list li > a {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.minor-block__list li {
+
+}
+
+
 
 
