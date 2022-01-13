@@ -19,100 +19,64 @@ body {
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
-.content {
+.block {
+    padding: 50px 0;
+
     background-color: #ffffff;
-    padding: 20px 0;
 }
 
-.main-block,
-.minor-block__inner {
-    padding: 0 20px;
-}
-
-.main-block,
-.minor-block {
+.block__inner {
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+    column-gap: 50px;
 }
 
-.title,
-.minor-block__title {
-    margin-bottom: 20px;
-    text-align: center;
-}
+.block__inner-elements {
+    width: 80px;
+    height: 80px;
 
-.title {
-    font-size: 80px;
-}
-
-.text,
-.minor-block__text {
-    margin-bottom: 10px;
-
-    text-indent: 10px;
-    text-align: justify;
-    font-size: 20px;
-}
-
-.text {
-    max-width: 80%;
-}
-
-img {
-    border-radius: 10px;
-}
-
-.minor-block__title {
-    font-size: 40px;
-    color: rgba(129, 1, 1, 0.89);
-}
-
-.minor-block__inner {
-    margin-bottom: 30px;
+    background-color: #fda900;
+    border: 1px solid #9D9D9DFF;
 
     display: flex;
-    column-gap: 50px;
+    align-items: center;
     justify-content: center;
 }
 
-.minor-block__text {
-    max-width: 50%;
+.block__a {
+    box-shadow: 10px 10px 0 2px rgb(60, 63, 65);
 }
 
-.minor-block__list {
-    display: flex;
-    justify-content: space-between;
+.block__b {
+    box-shadow: 10px 10px 5px 2px rgb(60, 63, 65);
 }
 
-.minor-block__list li {
-    padding: 10px 0 10px 5px;
-    width: 100%;
-    background-color: rgba(129, 1, 1, 0.89);
-
-    text-align: center;
-
-    cursor: pointer;
-
+.block__c {
+    box-shadow: 12px 12px 5px 5px rgb(60, 63, 65);
 }
 
-.minor-block__list li:hover {
-    background-color: #ffffff;
+.block__d {
+    box-shadow: 12px 12px 5px 5px rgb(157, 157, 157);
 }
 
-.minor-block__list li:hover a {
-    color: #000000;
+.block__e,
+.block__f {
+    border-radius: 5px;
 }
 
-.minor-block__list li > a {
-    color: #ffffff;
-    font-size: 20px;
+.block__e{
+    box-shadow: 10px 10px 5px 2px rgb(60, 63, 65);
 }
 
-.minor-block__list li {
-
+.block__f{
+    box-shadow: 10px 10px 5px 2px rgb(157, 157, 157);
 }
+
 
 
 
