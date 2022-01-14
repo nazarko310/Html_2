@@ -3,51 +3,26 @@
     padding: 0;
 }
 
-
-body {
-    background-color: #000000;
-}
-
 .block {
-    margin: 100px 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 15px;
+    margin: 50px 0 0 10px;
 }
 
-.block > button {
-    padding: 8px 0;
-    width: 150px;
+.blockGray {
+    margin-bottom: 20px;
+    width: 500px;
+    height: 250px;
 
-    background-color: transparent;
+    background-color: #7f7f7f;
 
-    border: 4px solid;
-    border-radius: 20px;
-
-    cursor: pointer;
+    box-shadow: -20px -20px 20px 10px #d6ba95;
 }
 
-.block__btnYellow{
-    background-color: #1e1e1e;
-    color: #fd6e1d;
+.block__text{
+    border-left: 4px solid #fc0000;
+    padding-left: 25px;
 }
 
-.block__btnBlue{
-    background-color: #2cfdf0;
-    color: #2cfdf0;
-}
 
-.block__btnPink{
-    background-color: #fd56ab;
-    color: #fd56ab;
-}
-
-.block__btnRed{
-    background-color: #fd3e3e;
-    color: #fd3e3e;
-}
 
 
 
