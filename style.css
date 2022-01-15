@@ -17,6 +17,13 @@
     align-items: center;
     justify-content: center;
 
+}
+
+#header p,
+#menu p,
+.block__post p,
+#footer p {
+
     text-transform: uppercase;
     font-weight: 900;
 
