@@ -9,71 +9,71 @@
     padding: 0 20px;
 }
 
-#header,
-#menu,
-.block__post,
-#footer {
+
+.blockA,
+.blockB,
+.blockC,
+.blockD,
+.blockE,
+.blockF {
+    background-color: silver;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
 
-#header p,
-#menu p,
-.block__post p,
-#footer p {
+.blockA,
+.blockB,
+.blockC,
+.blockD,
+.blockE {
+    height: 100px;
 
+}
+
+.blockA p,
+.blockB p,
+.blockC p,
+.blockD p,
+.blockE p,
+.blockF p {
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: bold;
 
 }
 
-#header {
-    margin-bottom: 10px;
-
-    background-color: #e5f5af;
-}
-
-#header,
-#footer {
-    height: 80px;
-
+.blockA {
+    margin-bottom: 20px;
 }
 
 .inner {
-    margin-bottom: 10px;
-
-    height: 400px;
-
     display: flex;
-    column-gap: 10px;
+    column-gap: 1%;
 }
 
-#menu {
-    width: 30%;
-    background-color: #fdb6fd;
-
+.inner__flex {
+    display: flex;
 }
 
-.block {
-    width: 70%;
-    flex-direction: column;
-    row-gap: 10px;
+.content {
+    width: 59%;
 }
 
-.block__post {
-    height: 195px;
-    background-color: #9ee1fd;
+.aside {
+    width: 40%;
 }
 
-.block__post:first-child {
-    margin-bottom: 10px;
-}
-
-#footer {
-    background-color: #fdfdc9;
+.blockF {
+    height: 100%;
 }
 
 
+.blockC,
+.blockD,
+.blockE {
+    width: 33.333%;
+}
 
