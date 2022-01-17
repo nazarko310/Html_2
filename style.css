@@ -9,17 +9,35 @@
     padding: 0 20px;
 }
 
+.inner {
+    height: 200px;
 
-.blockA,
-.blockB,
-.blockC,
-.blockD,
-.blockE,
-.blockF,
-.blockG,
-.blockH {
-    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2%;
+}
 
+.home,
+.about {
+    width: 49%;
+    height: 100%;
+}
+
+.home,
+.about,
+.kabobs {
+    background-color: #2269ba;
+    margin-bottom: 2%;
+
+}
+
+.home,
+.about,
+.kabobs,
+.shish,
+.bbq,
+.summer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,59 +45,30 @@
 
 }
 
-.blockA,
-.blockB,
-.blockC,
-.blockD,
-.blockE,
-.blockF,
-.blockG {
-    height: 100px;
-
-}
-
-.blockA,
-.inner__flexElements p,
-.blockH p {
-    text-transform: uppercase;
+.home p,
+.about p,
+.kabobs p,
+.group p {
     font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
 
 }
 
-.blockA {
-    margin-bottom: 20px;
+.kabobs {
+    height: 150px;
 }
 
-.inner {
+.group {
     display: flex;
-    column-gap: 1%;
+    column-gap: 2%;
 }
 
-.inner__flex {
-    width: 69%;
-}
+.shish,
+.bbq,
+.summer {
+    width: 32%;
+    height: 180px;
 
-.blockH {
-    width: 30%;
-}
-
-.inner__flex {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-}
-
-.inner__flexElements {
-    display: flex;
-    column-gap: 1%;
-}
-
-.blockB,
-.blockC,
-.blockD,
-.blockE,
-.blockF,
-.blockG {
-    width: 33%;
-
+    background-color: #164579;
 }
