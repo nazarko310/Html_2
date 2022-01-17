@@ -15,7 +15,9 @@
 .blockC,
 .blockD,
 .blockE,
-.blockF {
+.blockF,
+.blockG,
+.blockH {
     background-color: silver;
 
     display: flex;
@@ -29,17 +31,16 @@
 .blockB,
 .blockC,
 .blockD,
-.blockE {
+.blockE,
+.blockF,
+.blockG {
     height: 100px;
 
 }
 
-.blockA p,
-.blockB p,
-.blockC p,
-.blockD p,
-.blockE p,
-.blockF p {
+.blockA,
+.inner__flexElements p,
+.blockH p {
     text-transform: uppercase;
     font-weight: bold;
 
@@ -55,25 +56,30 @@
 }
 
 .inner__flex {
+    width: 69%;
+}
+
+.blockH {
+    width: 30%;
+}
+
+.inner__flex {
     display: flex;
+    flex-direction: column;
+    row-gap: 5px;
 }
 
-.content {
-    width: 59%;
+.inner__flexElements {
+    display: flex;
+    column-gap: 1%;
 }
 
-.aside {
-    width: 40%;
-}
-
-.blockF {
-    height: 100%;
-}
-
-
+.blockB,
 .blockC,
 .blockD,
-.blockE {
-    width: 33.333%;
-}
+.blockE,
+.blockF,
+.blockG {
+    width: 33%;
 
+}
