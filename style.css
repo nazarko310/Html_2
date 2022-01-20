@@ -14,93 +14,188 @@ a {
 }
 
 .header {
-    height: 42px;
-    margin-bottom: 5px;
-
-    background-color: #54d4ea;
+    margin-bottom: 50px;
+    background-color: #000000;
 }
 
-.header,
-.sidebar,
-.hero,
-.main-content,
-.extra-content,
-.post,
-.img,
-.footer {
+.header__inner {
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f15f05;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.nav {
+    display: flex;
+    column-gap: 25px;
+}
+
+.nav__link {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.nav__link:hover {
+    color: #f15f05;
+}
+
+.content__inner {
+    display: flex;
+    column-gap: 20px;
+}
+
+.aside {
+    width: calc((150 / 1170) * 100%);
+}
+
+.leading {
+    width: calc((1000 / 1170) * 100%);
+}
+
+
+.aside__filter {
+    width: 150px;
+    height: 33px;
+    margin-bottom: 10px;
+    background-color: #f15f05;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.aside__text {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.aside__filter:last-child {
+    margin-bottom: 0;
+}
+
+.intro {
+    height: 576px;
+    background: url("https://www.smileexpo.com.ua/public/upload/news/geymer_bud_ekonomen_legalnie_sposobi_ne_pereplachivat_za_igr_15506584434425_image.jpg") no-repeat center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+    z-index: 1;
 }
 
-.header p,
-.sidebar p,
-.hero p,
-.main-content p,
-.extra-content p,
-.img p,
-.post p,
-.footer p {
-    font-weight: bold;
+.intro::before {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.55);
+    left: 0;
+    top: 0;
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+}
+
+.intro h1 {
+    margin-bottom: 15px;
+    font-size: 60px;
     color: #ffffff;
-    text-transform: uppercase;
+
 }
 
-.content,
-.related {
-    margin-bottom: 6px;
+.intro p {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.gallery {
+    margin-bottom: 50px;
+}
+
+.gallery__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery__inner img {
+    height: 292px;
+}
+
+
+.list h3 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.list__inner {
+    margin-bottom: 50px;
 
     display: flex;
-    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
 }
 
-.content__left {
-    width: calc((151 / 1170) * 100%);
+.list__elements {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    box-sizing: border-box;
+
 }
 
-.content__right {
-    width: calc((1014 / 1170) * 100%);
+.list__elements p {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
 }
 
-.hero {
-    margin-bottom: 6px;
-    height: 126px;
-    background-color: #d6c8e2;
+.list__flex {
+    display: flex;
+    column-gap: 5%;
 }
 
-.sidebar {
-    height: 170px;
-    background-color: #9ec263;
+.list__game {
+    width: 70%;
 }
 
-.main-content {
-    margin-bottom: 6px;
-    height: 205px;
-    background-color: #f3c532;
+.list__news {
+    width: 24%;
 }
 
-.extra-content {
-    height: 91px;
-    background-color: #888888;
-}
-
-.related {
-    height: 73px;
-}
-
-.img {
-    width: 80%;
-    background-color: #2bb572;
-}
-
-
-.post {
-    width: 20%;
-    background-color: #f1cbdd;
+.list__news p{
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 10px;
 }
 
 .footer{
-    height: 40px;
-    background-color: #fca400;
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
