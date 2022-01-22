@@ -29,7 +29,8 @@
 .blockB,
 .blockC,
 .blockD,
-.blockE {
+.blockE,
+.blockF {
     height: 100px;
 
 }
@@ -45,34 +46,56 @@
 
 }
 
-.blockA {
-    margin-bottom: 20px;
+.blockA,
+.blockB {
+    margin-bottom: 5px;
 }
 
+
 .inner {
-    display: flex;
-    column-gap: 1%;
+    display: block;
+    column-gap: 5px;
 }
 
 .inner__flex {
     display: flex;
+    column-gap: 5px;
+    margin-bottom: 5px;
 }
-
-.content {
-    width: 59%;
-}
-
-.aside {
-    width: 40%;
-}
-
-.blockF {
-    height: 100%;
-}
-
 
 .blockC,
 .blockD,
-.blockE {
-    width: 33.333%;
+.blockE,
+.blockF,
+.aside,
+.content {
+    width: 100%;
+}
+
+@media (min-width: 720px) {
+    .inner {
+        display: flex;
+    }
+
+    .inner__flex {
+        margin-bottom: 0;
+    }
+
+    .blockC,
+    .blockD,
+    .blockE {
+        width: 33.333%;
+    }
+
+    .aside {
+        width: 40%;
+    }
+
+    .content {
+        width: 59%;
+    }
+
+    .blockF {
+        height: 100%;
+    }
 }
