@@ -15,6 +15,11 @@
         <div class="container">
             <div class="header__inner">
                 <p class="logo">Logo</p>
+
+                <div class="button">
+                    <i></i>
+                </div>
+
                 <nav class="nav">
                     <a href="" class="nav__link">Menu</a>
                     <a href="" class="nav__link">Menu</a>
@@ -23,6 +28,16 @@
                 </nav>
             </div>
         </div>
+
+        <div class="aside__mobile">
+            <a href="#" class="aside__filter aside__text">Екшен</a>
+            <a href="#" class="aside__filter aside__text">Стелс</a>
+            <a href="#" class="aside__filter aside__text">Хоррор</a>
+            <a href="#" class="aside__filter aside__text">Екшен</a>
+            <a href="#" class="aside__filter aside__text">Стелс</a>
+            <a href="#" class="aside__filter aside__text">Хоррор</a>
+        </div>
+
     </header>
 
     <main id="main">
@@ -176,7 +191,12 @@
     </main>
 
 </div>
+<script>
+    document.querySelector('.button').onclick = function () {
+        document.querySelector('.header').classList.toggle('active');
+    }
 
+</script>
 
 </body>
 </html>

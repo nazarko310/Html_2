@@ -19,9 +19,11 @@ a {
 }
 
 .header__inner {
+    padding: 10px 0;
     height: 80px;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -31,11 +33,13 @@ a {
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 900;
+    order: 2;
 }
 
 .nav {
     display: flex;
     column-gap: 25px;
+    order: 3;
 }
 
 .nav__link {
@@ -47,12 +51,42 @@ a {
     color: #f15f05;
 }
 
+.active .aside__mobile {
+    left: 0;
+
+}
+
+.active .aside__mobile {
+    transition: 250ms linear;
+
+}
+
+.aside__mobile {
+    padding-top: 20px;
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.84);
+
+    position: absolute;
+    left: -100%;
+    z-index: 5555;
+
+    transition: .5s linear;
+
+}
+
 .content__inner {
     display: flex;
+    justify-content: center;
     column-gap: 20px;
 }
 
 .aside {
+    display: none;
     width: calc((150 / 1170) * 100%);
 }
 
@@ -185,16 +219,87 @@ a {
     width: 24%;
 }
 
-.list__news p{
+.list__news p {
     margin-bottom: 20px;
     text-align: justify;
     text-indent: 10px;
 }
 
-.footer{
+.footer {
     height: 80px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+.button {
+    width: 35px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f15f05;
+
+    position: relative;
+    order: 1;
+    border-radius: 2px;
+
+    cursor: pointer;
+
+}
+
+.button i,
+.button i:after,
+.button i:before {
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+
+
+    content: "";
+}
+
+.button i:after {
+    position: absolute;
+    top: 8px;
+}
+
+.button i:before {
+    position: absolute;
+    bottom: 8px;
+}
+
+/*@media*/
+
+@media (min-width: 720px) {
+
+    .header__inner {
+        padding: 0 0;
+        flex-direction: row;
+
+    }
+}
+
+@media (min-width: 1220px) {
+    .aside {
+        display: block;
+    }
+
+    .button {
+        display: none;
+        order: 2;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .content__inner {
+        justify-content: unset;
+    }
 }
