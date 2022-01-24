@@ -1,419 +1,224 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-a {
-    text-decoration: none;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
     max-width: 100%;
 }
 
-.header {
-    margin-bottom: 50px;
-    background-color: #000000;
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 34px;
+    line-height: 40px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.container {
+    max-width: 1376px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn {
+    height: 54px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.btn-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*header*/
+.header a {
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .header__inner {
-    padding: 10px 0;
-    height: 80px;
-
+    height: 83px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    color: #f15f05;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 900;
-    order: 2;
+    column-gap: 145px;
 }
 
 .nav {
+    width: calc((618 / 1376) * 100%);
     display: flex;
-    column-gap: 25px;
-    order: 3;
+    justify-content: space-between;
 }
 
-.nav__link {
-    color: #ffffff;
-    font-size: 15px;
-}
-
-.nav__link:hover {
-    color: #f15f05;
-}
-
-.active .aside__mobile {
-    left: 0;
+.nav__link,
+.header__signIn,
+.header__sales {
+    color: #0B2330;
 
 }
 
-.active .aside__mobile {
-    transition: 250ms linear;
-
-}
-
-.aside__mobile {
-    padding-top: 20px;
-    height: 100vh;
-    width: 50%;
+.nav__flex {
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    background-color: rgba(0, 0, 0, 0.84);
-
-    position: absolute;
-    left: -100%;
-    z-index: 5555;
-
-    transition: .5s linear;
-
+    column-gap: 11px;
 }
 
-.content__inner {
+.header__button {
     display: flex;
-    justify-content: center;
-    column-gap: 20px;
-}
-
-.aside {
-    display: none;
-    width: calc((150 / 1170) * 100%);
-}
-
-.leading {
-    width: 100%;
-}
-
-
-.aside__filter {
-    width: 100px;
-    height: 33px;
-    margin-bottom: 10px;
-    background-color: #f15f05;
-    border-radius: 8px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    cursor: pointer;
-
+    column-gap: 31px;
 }
 
-.aside__text {
-    color: #ffffff;
-    font-size: 20px;
+
+.header__free {
+    width: 163px;
+
+    background-color: #0B2330;
+    border: 1px solid #0B2330;
+
+    color: #FFFFFF;
 }
 
-.aside__filter:last-child {
-    margin-bottom: 0;
-}
+/*header*/
 
+/*intro*/
 .intro {
-    height: 576px;
-    background: url("https://www.smileexpo.com.ua/public/upload/news/geymer_bud_ekonomen_legalnie_sposobi_ne_pereplachivat_za_igr_15506584434425_image.jpg") no-repeat center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    margin-bottom: 192px;
     position: relative;
-    z-index: 1;
 }
 
-.intro::before {
-    height: 100%;
-    width: 100%;
+.intro__inner {
+    height: 886px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
 
-    background-color: rgba(0, 0, 0, 0.55);
-    left: 0;
-    top: 0;
+}
+
+
+.intro__content {
+    margin: 0 auto;
+    width: calc((448 / 1376) * 100%);
+}
+
+.intro__img {
+    width: calc((678 / 1376) * 100%);
+}
+
+.intro__img:before,
+.intro__img:after {
+    width: calc((600 / 1376) * 100%);
+    position: absolute;
+    right: 0;
     content: "";
 
-    position: absolute;
+}
+
+.intro__img:before {
+    height: 112px;
+
+    background: url("img/line_bg.png") no-repeat;
+
+    bottom: 0;
+
+}
+
+.intro__img:after {
+    height: 100%;
+
+    background-color: #F9C600;
+
+    top: 0;
     z-index: -1;
 }
 
-.intro h1 {
-    margin-bottom: 10px;
-    font-size: 40px;
-    color: #ffffff;
-
-    text-align: center;
-
+.intro__content p, h1 {
+    max-width: 400px;
 }
 
-.intro p {
-    font-size: 20px;
-    color: #ffffff;
+.intro__content h1 {
+    margin-bottom: 24px;
 }
 
-.gallery {
-    margin-bottom: 50px;
+.intro__content p {
+    margin-bottom: 40px;
 }
 
-.gallery__inner {
+.intro__button {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    column-gap: 16px;
+
+    color: #0B2330;
 }
 
-.gallery__inner img {
-    height: 292px;
+.intro__button a {
+    color: #0B2330;
 }
 
-
-.list h3 {
-    margin-bottom: 20px;
-    font-size: 40px;
-    text-align: center;
-}
-
-.list__inner {
-    margin-bottom: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    column-gap: 20px;
+.intro__button-free {
+    width: calc((163 / 448) * 100%);
+    background-color: #F9C600;
+    border: 1px solid #F9C600;
 
 }
 
-.list__elements {
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
-    box-sizing: border-box;
+.intro__button-sales {
+    width: calc((156 / 448) * 100%);
+    border: 1px solid #0B2330;
 
 }
 
-.list__elements p {
-    font-size: 20px;
-    margin-top: 20px;
+/*intro*/
+
+
+/*companies*/
+
+.companies {
+    margin-bottom: 192px;
+}
+
+.companies h2{
+    margin:0 auto 56px;
+    max-width: 710px;
+
     text-align: center;
 }
 
-.list__flex {
-    display: flex;
-    flex-direction: column;
-    column-gap: 5%;
-}
-
-.list__game {
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.list__news {
-    display: flex;
-    flex-direction: column;
-    column-gap: 20px;
-    align-items: center;
-    width: 100%;
-}
-
-
-.list__news p:nth-child(odd) {
-    display: none;
-}
-
-.list__news-content {
-    width: 100%;
-    order: 2;
-}
-
-.list__news-mobile {
-    visibility: visible;
-    width: 100%;
-    order: 1;
-}
-
-.list__news p {
-    margin-bottom: 20px;
-    text-align: justify;
-    text-indent: 10px;
-}
-
-.footer {
-    height: 80px;
-
-    display: flex;
-    flex-direction: column;
+.companies__inner {
+    display: grid;
+    grid-template-columns: repeat(5, 203px);
     justify-content: center;
+    grid-row-gap: 16px;
 }
 
-
-.button {
-    width: 35px;
-    height: 30px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #f15f05;
-
-    position: relative;
-    order: 1;
-    border-radius: 2px;
-
-    cursor: pointer;
-
-}
-
-.button i,
-.button i:after,
-.button i:before {
-    width: 20px;
-    height: 2px;
-    background-color: #ffffff;
-    cursor: pointer;
+/*companies*/
 
 
-    content: "";
-}
-
-.button i:after {
-    position: absolute;
-    top: 8px;
-}
-
-.button i:before {
-    position: absolute;
-    bottom: 8px;
-}
-
-/*@media*/
-@media (min-width: 480px) {
-
-    .aside__filter {
-        width: 150px;
-        height: 33px;
-    }
-
-    .list__inner {
-        margin-bottom: 50px;
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 580px) {
-    .list__elements {
-        padding: 20px 30px;
-    }
-
-    .list__news {
-        flex-direction: row;
-
-    }
-
-    .list__news-content {
-        order: 1;
-        width: 40%;
-    }
-
-    .list__news-mobile {
-        order: 2;
-        width: 60%;
-
-    }
-}
-
-@media (min-width: 720px) {
-    .aside__mobile {
-        width: 30%;
-
-    }
-
-    .logo {
-        font-size: 40px;
-    }
-
-    .header__inner {
-        padding: 0 0;
-        flex-direction: row;
-
-    }
-
-    .intro h1 {
-        margin-bottom: 15px;
-        font-size: 60px;
-    }
-
-    .list__inner {
-        column-gap: 50px;
-    }
-
-    .list__news p:nth-child(odd) {
-        display: block;
-    }
-}
-
-@media (min-width: 1080px) {
-    .leading {
-        width: calc((1000 / 1170) * 100%);
-    }
-
-    .list__flex {
-        flex-direction: row;
-    }
-
-    .list__news-mobile {
-        visibility: hidden;
-    }
-
-    .list__news {
-        width: 24%;
-        display: block;
-    }
-
-    .list__game {
-        width: 70%;
-    }
-
-    .list__news-content {
-        width: 100%;
-    }
-}
-
-@media (min-width: 1220px) {
-    .aside {
-        display: block;
-    }
-
-    .button {
-        display: none;
-        order: 2;
-    }
-
-    .logo {
-        order: 1;
-    }
-
-    .content__inner {
-        justify-content: unset;
-    }
-}

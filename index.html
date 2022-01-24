@@ -1,213 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sprig</title>
 </head>
 <body>
-
 <div class="layout" id="layout">
 
-
+    <!--header-->
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <p class="logo">Logo</p>
 
-                <div class="button">
-                    <i></i>
-                </div>
+                <img src="img/logo.png" alt="header__logo" class="header__logo">
 
                 <nav class="nav">
-                    <a href="" class="nav__link">Menu</a>
-                    <a href="" class="nav__link">Menu</a>
-                    <a href="" class="nav__link">Menu</a>
-                    <a href="" class="nav__link">Menu</a>
+                    <a href="#" class="nav__link">
+                        Why Sprig?
+                    </a>
+                    <div class="nav__flex">
+                        <a href="#" class="nav__link">Product</a>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="nav__flex">
+                        <a href="#" class="nav__link">Customers</a>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="nav__flex">
+                        <a href="#" class="nav__link">Resources</a>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <a href="#" class="nav__link">Plans</a>
                 </nav>
+
+                <div class="header__button">
+                    <a href="#" class="header__signIn">Sign In</a>
+                    <a href="#" class="header__sales">Talk to Sales</a>
+                    <a href="#" class="header__free btn btn-text">Start for Free</a>
+                </div>
+
             </div>
         </div>
-
-        <div class="aside__mobile">
-            <a href="#" class="aside__filter aside__text">Екшен</a>
-            <a href="#" class="aside__filter aside__text">Стелс</a>
-            <a href="#" class="aside__filter aside__text">Хоррор</a>
-            <a href="#" class="aside__filter aside__text">Екшен</a>
-            <a href="#" class="aside__filter aside__text">Стелс</a>
-            <a href="#" class="aside__filter aside__text">Хоррор</a>
-        </div>
-
     </header>
+    <!--header-->
 
     <main id="main">
 
-        <div class="content">
-            <div class="container">
-                <div class="content__inner">
+        <!--intro-->
+        <section>
+            <div class="intro">
+                <div class="container">
+                    <div class="intro__inner">
 
-                    <div class="aside">
-                        <a href="#" class="aside__filter aside__text">Екшен</a>
-                        <a href="#" class="aside__filter aside__text">Стелс</a>
-                        <a href="#" class="aside__filter aside__text">Хоррор</a>
-                        <a href="#" class="aside__filter aside__text">Екшен</a>
-                        <a href="#" class="aside__filter aside__text">Стелс</a>
-                        <a href="#" class="aside__filter aside__text">Хоррор</a>
-                    </div>
-
-                    <div class="leading">
-
-                        <div class="intro">
-                            <h1>Геймер будь економним</h1>
-                            <p>Всі найкращі ігри тут</p>
-                        </div>
-
-                        <div class="gallery">
-                            <div class="gallery__inner">
-                                <img src="https://v.itorrents-igruha.org/uploads/posts/2021-12/1639860557_cover.jpg"
-                                     alt="gallery">
-                                <img src="https://v.itorrents-igruha.org/uploads/posts/2021-11/1635973218_cover.jpg"
-                                     alt="gallery">
-                                <img src="https://v.itorrents-igruha.org/uploads/posts/2021-11/1636644744_vp_chkcdklqibdnqeakd-a.jpeg"
-                                     alt="gallery">
-                                <img src="https://v.itorrents-igruha.org/uploads/posts/2021-10/1633083096_cover.jpg"
-                                     alt="gallery">
+                        <div class="intro__content">
+                            <h1>In-context user research that's fast and reliable.</h1>
+                            <p>Ensure user research happens early and often with Sprig's targeted microsurveys, video
+                                questions, and more.</p>
+                            <div class="intro__button">
+                                <a href="#" class="intro__button-free btn-text btn">Start for Free</a>
+                                <a href="#" class="intro__button-sales btn-text btn">Talk to Sales</a>
                             </div>
                         </div>
 
-                        <div class="list">
-
-                            <h3>Games</h3>
-
-                            <div class="list__flex">
-
-                                <div class="list__game">
-                                    <div class="list__inner">
-                                        <div class="list__elements">
-                                            <img src="https://v.itorrents-igruha.org/uploads/posts/2021-03/1617041610_cover.jpg"
-                                                 alt="games">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in laborum
-                                                provident
-                                                suscipit temporibus velit!</p>
-                                        </div>
-                                        <div class="list__elements">
-                                            <img src="https://v.itorrents-igruha.org/uploads/posts/2021-12/1640479359_cover.jpg"
-                                                 alt="games">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in laborum
-                                                provident
-                                                suscipit temporibus velit! </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="list__inner">
-
-                                        <div class="list__elements">
-                                            <img src="https://v.itorrents-igruha.org/uploads/posts/2021-03/1617041610_cover.jpg"
-                                                 alt="games">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in laborum
-                                                provident
-                                                suscipit temporibus velit!</p>
-                                        </div>
-
-                                        <div class="list__elements">
-                                            <img src="https://v.itorrents-igruha.org/uploads/posts/2021-12/1640479359_cover.jpg"
-                                                 alt="games">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in laborum
-                                                provident
-                                                suscipit temporibus velit! </p>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="list__inner">
-                                        <div class="list__elements">
-                                            <img src="https://v.itorrents-igruha.org/uploads/posts/2021-03/1617041610_cover.jpg"
-                                                 alt="games">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in laborum
-                                                provident
-                                                suscipit temporibus velit!</p>
-                                        </div>
-                                        <div class="list__elements">
-                                            <img src="https://v.itorrents-igruha.org/uploads/posts/2021-12/1640479359_cover.jpg"
-                                                 alt="games">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in laborum
-                                                provident
-                                                suscipit temporibus velit! </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="list__inner">
-                                        <div class="list__elements">
-                                            <img src="https://v.itorrents-igruha.org/uploads/posts/2021-03/1617041610_cover.jpg"
-                                                 alt="games">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in laborum
-                                                provident
-                                                suscipit temporibus velit!</p>
-                                        </div>
-                                        <div class="list__elements">
-                                            <img src="https://v.itorrents-igruha.org/uploads/posts/2021-12/1640479359_cover.jpg"
-                                                 alt="games">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in laborum
-                                                provident
-                                                suscipit temporibus velit! </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="list__news">
-                                    <div class="list__news-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae
-                                            cum
-                                            dolores facere, illum iste laudantium officia quo repellat ut? At blanditiis
-                                            ducimus, explicabo laborum nobis quisquam sequi velit voluptate?</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae
-                                            cum
-                                            dolores facere, illum iste laudantium officia quo repellat ut? At blanditiis
-                                            ducimus, explicabo laborum nobis quisquam sequi velit voluptate?</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae
-                                            cum
-                                            dolores facere, illum iste laudantium officia quo repellat ut? At blanditiis
-                                            ducimus, explicabo laborum nobis quisquam sequi velit voluptate?</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae
-                                            cum
-                                            dolores facere, illum iste laudantium officia quo repellat ut? At blanditiis
-                                            ducimus, explicabo laborum nobis quisquam sequi velit voluptate?</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae
-                                            cum
-                                            dolores facere, illum iste laudantium officia quo repellat ut? At blanditiis
-                                            ducimus, explicabo laborum nobis quisquam sequi velit voluptate?</p>
-                                    </div>
-                                    <div class="list__news-mobile">
-                                        <img src="https://www.cnet.com/a/img/RXbjUfNFz72nZtvi_CnFdZvhBGU=/940x0/2021/12/17/9a006e1a-9253-4c8d-9f37-a43c724fbd84/godkrato.png"
-                                             alt="new_games">
-                                    </div>
-                                </div>
-
-
-                            </div>
-
+                        <div class="intro__img">
+                            <img src="img/intro.png" alt="image">
                         </div>
 
-                        <footer class="footer">
-                            <p>&copy; Copyright 2022. Всі права захищені</p>
-                        </footer>
-
-
                     </div>
-
                 </div>
             </div>
+        </section>
+        <!--intro-->
 
-        </div>
+        <!--companies-->
+        <section>
+            <div class="companies">
+                <div class="container">
+                    <h2>Trusted by the world's most innovative companies</h2>
+                    <div class="companies__inner">
+                        <img src="img/companies/square.png" alt="companies">
+                        <img src="img/companies/codecademy.png" alt="companies">
+                        <img src="img/companies/deopbox.png" alt="companies">
+                        <img src="img/companies/loom.png" alt="companies">
+                        <img src="img/companies/adobe.png" alt="companies">
+                        <img src="img/companies/shift.png" alt="companies">
+                        <img src="img/companies/ease.png" alt="companies">
+                        <img src="img/companies/ironclad.png" alt="companies">
+                        <img src="img/companies/opendoor.png" alt="companies">
+                        <img src="img/companies/surfline.png" alt="companies">
+                        <img src="img/companies/app.png" alt="companies">
+                        <img src="img/companies/beyond.png" alt="companies">
+                        <img src="img/companies/proguides.png" alt="companies">
+                        <img src="img/companies/invoice.png" alt="companies">
+                        <img src="img/companies/chipper.png" alt="companies">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--companies-->
+
     </main>
 
 </div>
-<script>
-    document.querySelector('.button').onclick = function () {
-        document.querySelector('.header').classList.toggle('active');
-    }
-
-</script>
-
 </body>
 </html>
