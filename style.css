@@ -39,7 +39,7 @@ p {
 .container {
     max-width: 1376px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 32px;
 }
 
 .btn {
@@ -205,8 +205,8 @@ p {
     margin-bottom: 192px;
 }
 
-.companies h2{
-    margin:0 auto 56px;
+.companies h2 {
+    margin: 0 auto 56px;
     max-width: 710px;
 
     text-align: center;
@@ -221,4 +221,106 @@ p {
 
 /*companies*/
 
+/*modern*/
 
+.modern {
+    margin-bottom: 192px;
+
+}
+
+.modern__inner {
+    padding: 56px 0;
+
+    background-color: #51CEBC;
+    border-radius: 10px;
+
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.modern__content p, h3 {
+    max-width: 562px;
+
+    color: #0B2330;
+}
+
+.modern__content h3 {
+    margin-bottom: 32px;
+}
+
+
+/*modern*/
+
+/*analytics*/
+.analytics {
+    margin-bottom: 176px;
+}
+
+.analytics__inner {
+    display: grid;
+    justify-content: center;
+}
+
+.analytics__inner h3 {
+    margin: 0 auto 57px;
+    max-width: 820px;
+
+    text-align: center;
+    color: #0B2330;
+}
+
+
+.analytics__btn {
+    width: 163px;
+    margin: 113px auto 0;
+    background-color: #F9C600;
+    border: 1px solid #F9C600;
+
+    color: #0B2330;
+}
+
+/*analytics*/
+
+
+/*target*/
+.target {
+    margin-bottom: 136px;
+}
+
+.target__inner {
+    padding: 64px 0;
+    display: flex;
+    column-gap: 136px;
+
+    position: relative;
+
+}
+
+.target__inner:after {
+    width: calc((1260 / 1376) * 100%);
+    height: 100%;
+
+    background-color: #BD78F0;
+    border-radius: 10px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    content: "";
+
+}
+
+.target__text h2 {
+    max-width: 485px;
+    margin: 0 0 35px;
+}
+
+.target__text p {
+    max-width: 562px;
+    font-size: 17px;
+
+}
+
+/*target*/
