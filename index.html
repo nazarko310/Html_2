@@ -30,25 +30,71 @@
                     <a href="#" class="nav__link">
                         Why Sprig?
                     </a>
-                    <div class="nav__flex">
-                        <a href="#" class="nav__link">Product</a>
-                        <i class="fas fa-chevron-down"></i>
+
+                    <div class="nav__item">
+                        <div class="nav__flex">
+                            <a href="#" class="nav__link">Product</a>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="nav__submenu">
+                            <a href="#" class="nav__submenu-link">Microsurveys</a>
+                            <a href="#" class="nav__submenu-link">Video Questions</a>
+                            <a href="#" class="nav__submenu-link">Concept Testing</a>
+                            <a href="#" class="nav__submenu-link">Contextual Targeting</a>
+                            <a href="#" class="nav__submenu-link">Text Analysis</a>
+                            <a href="#" class="nav__submenu-link">Integrations</a>
+                            <a href="#" class="nav__submenu-link">Plans</a>
+                        </div>
                     </div>
-                    <div class="nav__flex">
-                        <a href="#" class="nav__link">Customers</a>
-                        <i class="fas fa-chevron-down"></i>
+
+                    <div class="nav__item">
+                        <div class="nav__flex">
+                            <a href="#" class="nav__link">Customers</a>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="nav__submenu">
+                            <a href="#" class="nav__submenu-link">Square</a>
+                            <a href="#" class="nav__submenu-link">Codecademy</a>
+                            <a href="#" class="nav__submenu-link">Nova Credit</a>
+                            <a href="#" class="nav__submenu-link">Chippe</a>
+                            <a href="#" class="nav__submenu-link">Plann</a>
+                            <a href="#" class="nav__submenu-link">ProGuides</a>
+                            <a href="#" class="nav__submenu-link">Shift</a>
+                        </div>
                     </div>
-                    <div class="nav__flex">
-                        <a href="#" class="nav__link">Resources</a>
-                        <i class="fas fa-chevron-down"></i>
+
+                    <div class="nav__item">
+                        <div class="nav__flex">
+                            <a href="#" class="nav__link">Resources</a>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="nav__submenu">
+                            <a href="#" class="nav__submenu-link">Blog</a>
+                            <a href="#" class="nav__submenu-link">Template Gallery</a>
+                            <a href="#" class="nav__submenu-link">Podcast</a>
+                            <a href="#" class="nav__submenu-link">Documentation</a>
+                            <a href="#" class="nav__submenu-link">Security</a>
+                        </div>
                     </div>
+
                     <a href="#" class="nav__link">Plans</a>
+
+                    <div class="header__button-mobile">
+                        <a href="#" class="header__signIn">Sign In</a>
+                        <a href="#" class="header__sales">Talk to Sales</a>
+                        <a href="#" class="header__free btn btn-text">Start for Free</a>
+                    </div>
+
                 </nav>
 
                 <div class="header__button">
                     <a href="#" class="header__signIn">Sign In</a>
                     <a href="#" class="header__sales">Talk to Sales</a>
                     <a href="#" class="header__free btn btn-text">Start for Free</a>
+                </div>
+
+                <div class="mobile_btn">
+                    <span></span>
                 </div>
 
             </div>
@@ -427,9 +473,11 @@
 
             <div class="footer__inner">
 
-                <img src="img/logo__footer.png" alt="logo">
+                <div class="footer__logo">
+                    <img src="img/logo__footer.png" alt="logo">
+                </div>
 
-                <nav class="footer__nav">
+                <nav class="footer__nav area__nav1">
                     <a href="#" class="footer__nav-link">Product</a>
                     <a href="#" class="footer__nav-link">Microsurveys</a>
                     <a href="#" class="footer__nav-link">Video Questions</a>
@@ -440,7 +488,7 @@
                     <a href="#" class="footer__nav-link">Plans</a>
                 </nav>
 
-                <nav class="footer__nav">
+                <nav class="footer__nav area__nav2">
                     <a href="#" class="footer__nav-link">Customer Stories</a>
                     <a href="#" class="footer__nav-link">Square</a>
                     <a href="#" class="footer__nav-link">Codecademy</a>
@@ -451,7 +499,7 @@
                     <a href="#" class="footer__nav-link">Shift</a>
                 </nav>
 
-                <nav class="footer__nav">
+                <nav class="footer__nav area__nav3">
                     <a href="#" class="footer__nav-link">Company</a>
                     <a href="#" class="footer__nav-link">About Us</a>
                     <a href="#" class="footer__nav-link">Careers</a>
@@ -460,7 +508,7 @@
                     <a href="#" class="footer__nav-link">Data Processing Addendum</a>
                 </nav>
 
-                <nav class="footer__nav">
+                <nav class="footer__nav area__nav4">
                     <a href="#" class="footer__nav-link">Resources</a>
                     <a href="#" class="footer__nav-link">Blog</a>
                     <a href="#" class="footer__nav-link">Template Gallery</a>
@@ -492,5 +540,10 @@
     <!--footer-->
 
 </div>
+<script>
+    document.querySelector('.mobile_btn').onclick = function () {
+        document.querySelector('.header__inner').classList.toggle('active');
+    }
+</script>
 </body>
 </html>
